@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <copy file="nuova_mappa.net.xml"/>
+    <copy file="arcavacatamap_small_60pct.rou.xml"/>
+    <copy file="arcavacatamap_small_60pct.sumocfg" type="config"/>
+</launch>
