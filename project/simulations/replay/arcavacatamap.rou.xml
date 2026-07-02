@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <vType id="normal_car" accel="2.8" decel="4.5" sigma="0.5"
+           length="4.5" minGap="8" maxSpeed="14" color="1,1,0"/>
+    <vType id="slow_car" accel="1.7" decel="3.5" sigma="0.5"
+           length="4.5" minGap="8" maxSpeed="7" color="0,0,1"/>
+    <vType id="attacker_car" accel="2.4" decel="4.5" sigma="0.5"
+           length="4.5" minGap="8" maxSpeed="14" color="1,0,0"/>
+
+    <route id="route0" edges="45849800#5 45849800#6 45849800#7 120516818#1
+        120516818#2 120516818#3 120516818#4 120516818#5 121823451 30924737#3
+        31143664 121823473 30924737#5 30924737#6 30924737#7 121823462
+        -30504149#8 -30504149#7 -30504149#6 -30504149#3 -30504149#2
+        -30504149#1 -30504149#0 30898807#0 30898807#1"/>
+    <route id="route1" edges="121823452 30924737#7 30924737#0 30924737#1
+        121823455 -120516818#5 -120516818#4 -120516818#3 -120516818#2
+        -120516818#1 -120516818#0 -45849800#6 -45849800#5 -45849800#4
+        -45849800#3 -45849800#2 -45849800#1"/>
+	<route id="route_circular" edges="45849800#5 45849800#6 45849800#7 120516818#1
+	    120516818#2 120516818#3 120516818#4 120516818#5 121823451 30924737#3
+	    31143664 121823473 30924737#5 30924737#6 30924737#7 121823462
+	    -30504149#8 -30504149#7 -30504149#6 -30504149#3 -30504149#2
+	    -30504149#1 -30504149#0 30898807#0 -30898807#0
+	    121823452 30924737#7 30924737#0 30924737#1
+	    121823455 -120516818#5 -120516818#4 -120516818#3 -120516818#2
+	    -120516818#1 -120516818#0 -45849800#6 -45849800#5 -45849800#4
+	    -45849800#3 -45849800#2 -45849800#1"/>
+	    
+    <!-- ONDATA 1: 10 slow + 10 normal + 2 attaccanti -->
+    <flow id="slow_flow0" type="slow_car" route="route0"
+          begin="0" period="0.7" number="10" arrivalPos="-1"/>
+    <flow id="normal_flow0" type="normal_car" route="route1"
+          begin="0" period="0.7" number="10" arrivalPos="-1"/>
+    <flow id="attacker_flow0" type="attacker_car" route="route1"
+      begin="1" period="1.5" number="1" arrivalPos="-1"/>
+
+
+    <!-- ONDATA 2: 10 slow + 10 normal + 2 attaccanti -->
+    <flow id="slow_flow1" type="slow_car" route="route0"
+          begin="60" period="0.7" number="10" arrivalPos="-1"/>
+    <flow id="normal_flow1" type="normal_car" route="route1"
+          begin="60" period="0.7" number="10" arrivalPos="-1"/>
+    <flow id="attacker_flow1" type="attacker_car" route="route1"
+      begin="61" period="1.5" number="1" arrivalPos="-1"/>
+      
+    <!-- ONDATA 3: 10 slow + 10 normal + 1 attaccante -->
+    <flow id="slow_flow2" type="slow_car" route="route0"
+          begin="120" period="0.7" number="10" arrivalPos="-1"/>
+    <flow id="normal_flow2" type="normal_car" route="route1"
+          begin="120" period="0.7" number="10" arrivalPos="-1"/>
+    <flow id="attacker_flow2" type="attacker_car" route="route1"
+      begin="121" period="1.5" number="1" arrivalPos="-1"/>
+
+</routes>

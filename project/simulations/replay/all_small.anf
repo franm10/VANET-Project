@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scave:Analysis xmi:version="2.0"
+
+  xmlns:xmi="http://www.omg.org/XMI"
+
+  xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+<inputs>
+
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S1_NoAttack_Small-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S2_Attack_Small_8pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S2_Attack_Small_15pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S2_Attack_Small_30pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S2_Attack_Small_40pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S2_Attack_Small_50pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S2_Attack_Small_60pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S3_NoAttack_Trust_Small-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S4_Attack_Trust_Small_8pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S4_Attack_Trust_Small_15pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S4_Attack_Trust_Small_30pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S4_Attack_Trust_Small_40pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S4_Attack_Trust_Small_50pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S4_Attack_Trust_Small_60pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S5_NoAttack_Active_Small-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S6_Attack_Active_Small_8pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S6_Attack_Active_Small_15pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S6_Attack_Active_Small_30pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S6_Attack_Active_Small_40pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S6_Attack_Active_Small_50pct-*.sca"/>
+  <inputs name="/NetworkProjectVanet/simulations/replay/results/S6_Attack_Active_Small_60pct-*.sca"/>
+</inputs>
+<datasets/>
+<chartSheets/>
+</scave:Analysis>

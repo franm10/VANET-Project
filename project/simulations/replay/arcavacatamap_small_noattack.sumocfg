@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file value="nuova_mappa.net.xml"/>
+        <route-files value="arcavacatamap_small_noattack.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="320"/>
+        <step-length value="0.1"/>
+    </time>
+    <processing>
+        <lanechange.duration value="1.5"/>
+        <ignore-route-errors value="true"/>
+    </processing>
+    <report>
+        <xml-validation value="never"/>
+        <xml-validation.net value="never"/>
+        <no-step-log value="true"/>
+    </report>
+    <gui_only>
+        <start value="true"/>
+    </gui_only>
+</configuration>
